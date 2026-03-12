@@ -1,0 +1,2 @@
+#!/bin/bash
+pandoc $1 -s -o /tmp/md-preview.html && xdg-open /tmp/md-preview.html

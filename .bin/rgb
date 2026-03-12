@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+if [ "$1" = "off" ]; then
+    openrgb -d 0 --mode static --color 000000
+elif [ "$1" = "white" ]; then
+    openrgb -d 0 --mode static --color ffffff
+else
+    echo "Usage: $0 {off|white}"
+    exit 1
+fi

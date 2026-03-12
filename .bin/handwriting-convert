@@ -1,0 +1,4 @@
+#!/bin/env bash
+
+magick $1 -colorspace Gray -normalize -auto-level -threshold 35% -quality 50 -transparent white $2
+magick $2 -fill white -opaque black $2

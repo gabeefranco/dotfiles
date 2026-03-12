@@ -1,0 +1,57 @@
+    OpenRGB v0.9+ (1.0rc2)
+    Commit:  from 
+    Launched: 20260301_012803
+====================================================================================================
+
+0     |Info:    [ProfileManager] Found file: white.orp attempting to validate header
+0     |Info:    [ProfileManager] Valid v5 profile found for white
+53    |Info:    [ResourceManager] Initializing HID interfaces: Success
+53    |Info:    ------------------------------------------------------
+53    |Info:    |               Start device detection               |
+53    |Info:    ------------------------------------------------------
+63    |Info:    ------------------------------------------------------
+63    |Info:    |             Detecting I2C interfaces               |
+63    |Info:    ------------------------------------------------------
+64    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 1002:15BF Subsystem: 1043:8877
+64    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-10 Device 1022:790B Subsystem: 1043:8877
+64    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 1002:15BF Subsystem: 1043:8877
+64    |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+64    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-8 Device 0000:0000 Subsystem: 0000:0000
+64    |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+64    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 0000:0000 Subsystem: 0000:0000
+64    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 1002:15BF Subsystem: 1043:8877
+64    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-11 Device 1022:790B Subsystem: 1043:8877
+64    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 1002:15BF Subsystem: 1043:8877
+64    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 1002:15BF Subsystem: 1043:8877
+64    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-9 Device 1022:790B Subsystem: 1043:8877
+64    |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+64    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-7 Device 0000:0000 Subsystem: 0000:0000
+64    |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+64    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 0000:0000 Subsystem: 0000:0000
+64    |Info:    ------------------------------------------------------
+64    |Info:    |               Detecting I2C devices                |
+64    |Info:    ------------------------------------------------------
+1073  |Info:    ------------------------------------------------------
+1073  |Info:    |            Detecting I2C DIMM modules              |
+1073  |Info:    ------------------------------------------------------
+1164  |Info:    [ResourceManager] Detected occupied slot 1, bus 9, type DDR5
+1169  |Info:    [ResourceManager] Detected occupied slot 3, bus 9, type DDR5
+1258  |Info:    ------------------------------------------------------
+1258  |Info:    |               Detecting I2C PCI devices            |
+1258  |Info:    ------------------------------------------------------
+1258  |Info:    ------------------------------------------------------
+1258  |Info:    |               Detecting HID devices                |
+1258  |Info:    ------------------------------------------------------
+1335  |Info:    [ASUS B650M-AYW WIFI] Registering RGB controller
+1336  |Info:    [HyperX Pulsefire Core (HP)] Registering RGB controller
+1336  |Info:    [] Registering RGB controller
+1336  |Info:    ------------------------------------------------------
+1336  |Info:    |            Detecting libusb HID devices            |
+1336  |Info:    ------------------------------------------------------
+1560  |Info:    ------------------------------------------------------
+1560  |Info:    |              Detecting other devices               |
+1560  |Info:    ------------------------------------------------------
+1582  |Info:    [ResourceManager] Calling Post-detection callbacks
+1582  |Info:    ------------------------------------------------------
+1582  |Info:    |                Detection completed                 |
+1582  |Info:    ------------------------------------------------------

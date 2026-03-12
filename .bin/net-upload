@@ -1,0 +1,30 @@
+#!/bin/bash
+
+pinggy_args=()
+upload_args=()
+
+while getopts "a:p:t" opt; do
+  case $opt in
+  a)
+    upload_args+=("--basic-auth" "$OPTARG")
+    ;;
+  p)
+    pinggy_args+=("-p" "443" "-R0:localhost:$OPTARG")
+    upload_args+=("$OPTARG")
+    ;;
+  esac
+done
+
+if [ -n "$PINGGY_TOKEN" ]; then
+  pinggy_args+=("--token" "$PINGGY_TOKEN")
+fi
+
+pipx run uploadserver "$upload_args" &
+pid1=$!
+
+pinggy "${pinggy_args[@]}" &
+pid2=$!
+
+trap "kill $pid1 $pid2 2>/dev/null" EXIT
+
+wait
