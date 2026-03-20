@@ -5,14 +5,16 @@
 export PATH=$PATH:/home/gabe/.local/bin
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
+# NOTE: GoLang installation
 export PATH=$PATH:/home/gabe/go/bin
 
 
+# NOTE: NPM BIM DIRECTORY
 export PATH=$PATH:$(asdf where nodejs)/bin
 
+# NOTE: sets JAVA_HOME
 . ~/.asdf/plugins/java/set-java-home.zsh
 
-export PATH=$PATH:~/.spicetify
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
@@ -185,9 +187,7 @@ fi
 
 NEWLINE=$'\n'
 
-PROMPT="${NEWLINE}%K{#1a1b26}%F{#c0caf5}$(date +%_I:%M%P) %K{#414868}%F{#c0caf5} %n %K{#565f89} %~ %f%k ❯ "
-
-echo -e "${NEWLINE}\033[48;2;26;27;38;38;2;192;202;245m $0 \033[0m\033[48;2;65;72;104;38;2;192;202;245m $(uptime -p | cut -c 4-) \033[0m\033[48;2;86;95;137;38;2;192;202;245m $(uname -r) \033[0m"
+source "$HOME/.config/zsh/prompt.sh"
 
 export PATH=$PATH:/home/gabe/.spicetify
 export PATH=$PATH:/home/gabe/.bin
@@ -205,3 +205,6 @@ export SDKMAN_DIR="$HOME/.sdkman"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH=$PATH:~/.spicetify
+
+eval "$(zoxide init zsh)"

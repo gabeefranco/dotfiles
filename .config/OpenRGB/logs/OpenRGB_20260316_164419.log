@@ -1,0 +1,66 @@
+    OpenRGB v0.9+ (1.0rc2)
+    Commit:  from 
+    Launched: 20260316_164419
+====================================================================================================
+
+0     |Info:    [ProfileManager] Found file: white.orp attempting to validate header
+0     |Info:    [ProfileManager] Valid v5 profile found for white
+52    |Info:    [ResourceManager] Initializing HID interfaces: Success
+52    |Info:    ------------------------------------------------------
+52    |Info:    |               Start device detection               |
+52    |Info:    ------------------------------------------------------
+61    |Info:    ------------------------------------------------------
+61    |Info:    |             Detecting I2C interfaces               |
+61    |Info:    ------------------------------------------------------
+61    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 1002:15BF Subsystem: 1043:8877
+61    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-10 Device 1022:790B Subsystem: 1043:8877
+61    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 1002:15BF Subsystem: 1043:8877
+61    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-17 Device 10DE:1F03 Subsystem: 19DA:9527
+61    |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+61    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-8 Device 0000:0000 Subsystem: 0000:0000
+61    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-15 Device 10DE:1F03 Subsystem: 19DA:9527
+61    |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+61    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 0000:0000 Subsystem: 0000:0000
+61    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-13 Device 10DE:1F03 Subsystem: 19DA:9527
+61    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 1002:15BF Subsystem: 1043:8877
+61    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-11 Device 1022:790B Subsystem: 1043:8877
+61    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 1002:15BF Subsystem: 1043:8877
+62    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 1002:15BF Subsystem: 1043:8877
+62    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-9 Device 1022:790B Subsystem: 1043:8877
+62    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-16 Device 10DE:1F03 Subsystem: 19DA:9527
+62    |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+62    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-7 Device 0000:0000 Subsystem: 0000:0000
+62    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-14 Device 10DE:1F03 Subsystem: 19DA:9527
+62    |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+62    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 0000:0000 Subsystem: 0000:0000
+62    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-12 Device 10DE:1F03 Subsystem: 19DA:9527
+62    |Info:    ------------------------------------------------------
+62    |Info:    |               Detecting I2C devices                |
+62    |Info:    ------------------------------------------------------
+1058  |Info:    ------------------------------------------------------
+1058  |Info:    |            Detecting I2C DIMM modules              |
+1058  |Info:    ------------------------------------------------------
+1147  |Info:    [ResourceManager] Detected occupied slot 1, bus 12, type DDR5
+1151  |Info:    [ResourceManager] Detected occupied slot 3, bus 12, type DDR5
+1242  |Info:    ------------------------------------------------------
+1242  |Info:    |               Detecting I2C PCI devices            |
+1242  |Info:    ------------------------------------------------------
+1243  |Info:    ------------------------------------------------------
+1243  |Info:    |               Detecting HID devices                |
+1243  |Info:    ------------------------------------------------------
+1243  |Info:    [HyperX Pulsefire Core (HP)] Registering RGB controller
+1319  |Info:    [ASUS B650M-AYW WIFI] Registering RGB controller
+1319  |Info:    [] Registering RGB controller
+1319  |Info:    ------------------------------------------------------
+1319  |Info:    |            Detecting libusb HID devices            |
+1319  |Info:    ------------------------------------------------------
+1556  |Info:    ------------------------------------------------------
+1556  |Info:    |              Detecting other devices               |
+1556  |Info:    ------------------------------------------------------
+1580  |Info:    [ResourceManager] Calling Post-detection callbacks
+1580  |Info:    ------------------------------------------------------
+1580  |Info:    |                Detection completed                 |
+1580  |Info:    ------------------------------------------------------
+1580  |Info:    [ProfileManager] Profile loading: FAILED! for HyperX Pulsefire Core (HP) @ HID /dev/hidraw5
+1580  |Info:    [ProfileManager] Profile loading: Succeeded for ASUS B650M-AYW WIFI @ HID: /dev/hidraw0
+1580  |Info:    [ProfileManager] Profile loading: FAILED! for  @ HID /dev/hidraw1

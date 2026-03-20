@@ -2,7 +2,7 @@
 require("config.lazy")
 
 local colorscheme = "tokyonight"
-local file = io.open("/home/gabe/.colorscheme", "r")
+local file = io.open("/home/gabe/.config/nvim/colorscheme", "r")
 if file ~= nil then
   colorscheme = file:read("*a")
 end

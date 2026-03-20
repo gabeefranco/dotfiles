@@ -19,6 +19,7 @@ require("lazy").setup({
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     { "morhetz/gruvbox" },
+    { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
     -- import/override with your plugins
     { import = "plugins" },
   },
